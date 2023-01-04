@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>First Word Bold_2.2</title>
+        <style>
+            body {
+               background-image: url("https://www.wallpaperbetter.com/wallpaper/454/510/488/winter-evening-walk-1080P-wallpaper-middle-size.jpg");
+            }
+            #left {
+                float : left;
+                text-align: left;
+            }
+            #poem{
+                font-family:cursive;
+            }
+         </style>
+        <script type = "text/JavaScript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        </script>
+        <script type = "text/javascript">
+            $(document).ready(function() {
+                $('p').each(function(){
+                    var boldtxt = $(this);
+                    boldtxt.html(boldtxt.text().replace(/(^\w+)/, '<strong>$1</strong>'));
+                });
+            });
+        </script>
+    </head>
+    <body style="text-align:center; color: rgb(255, 255, 255);font-size:x-large;";>
+        <h1 style="text-align:center;";>
+            <p>TITLE : Worksheet 2.2</p>
+        </h1>
+        <p>TASK : To make the first word BOLD of every element using jQuery</p>
+        <p>Below you can find one of my favorite poems :</p>
+        <h2 style="color:rgb(255, 255, 255);font-size: larger;";>
+            "Stopping by Woods on a Snowy Evening by Robert Frost"
+        </h2>
+
+        <div id="poem">
+        <p>Whose woods these are I think I know.</p>   
+        <p>His house is in the village though;</p>   
+        <p>He will not see me stopping here</p>   
+        <p>To watch his woods fill up with snow.</p>
+
+        <p>My little horse must think it queer</p>    
+        <p>To stop without a farmhouse near</p>   
+        <p>Between the woods and frozen lake</p>   
+        <p>The darkest evening of the year.</p>
+
+        <p>He gives his harness bells a shake</p>   
+        <p>To ask if there is some mistake.</p>   
+        <p>The only other sound’s the sweep</p>   
+        <p>Of easy wind and downy flake.</p> 
+          
+        <p>The woods are lovely, dark and deep,</p>   
+        <p>But I have promises to keep,</p>   
+        <p>And miles to go before I sleep,</p>   
+        <p>And miles to go before I sleep.</p>
+    </div>
+
+        <div id="left">
+        <p>Submitted_by : Aakash Srivastava</p>
+        <p>UID : 22MCA20067</p>
+        <p>Course : MCA (2022-24)</p>
+        <p>Submitted_to : Prof. Payal Sharma</p>
+        <p>DATED : 05/12/2022</p>
+    </div>
+    </body>
+</html>
